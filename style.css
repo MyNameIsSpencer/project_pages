@@ -1,3 +1,8 @@
+element {
+  --main-bg-color: brown;
+}
+
+
 body {
   font-family: helvetica, arial;
   margin: 0px;
@@ -6,8 +11,8 @@ body {
 
 #heading-name {
   margin-top: 0;
-  font-weight: lighter;
-  font-size: 10vw;
+  font-weight: normal;
+  font-size: 6vw;
 }
 
 #pagetop {
@@ -15,11 +20,12 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  background-image: url("iceberg.jpg");
+  background-image: url("mountains.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
   font-size: 23px;
+  text-shadow: 3px 3px #000000;
   /* padding-top: 50px; */
   -webkit-transition: height 0.3s linear 0s, padding 0.3s linear 0s;
   overflow: hidden;
@@ -34,12 +40,16 @@ body {
 	transition: height 0.3s linear 0s;
 }
 
-.top-pic {
-  width: 100%
+
+
+.central-column {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topper {
-  margin-top: 250px;
+  margin-top: 550px;
   color: green;
 }
 
@@ -52,5 +62,8 @@ body {
 @media (max-aspect-ratio: 3/2) {
   #pagetop {
     background-size: auto 100%;
+  }
+  #heading-name {
+    margin-top: 1.5vw;
   }
 }
