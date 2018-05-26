@@ -57,7 +57,7 @@ body {
 
 #p-one {
   margin: 0px;
-  margin-left: -150vw;
+  margin-left: -100vw;
   height: 100%;
   text-align: left;
   padding: 20px;
@@ -65,7 +65,7 @@ body {
   left: 0px;
   background-color: transparent;
   color: transparent;
-  transition: 250ms ease;
+  transition: 800ms ease;
   transition-delay: 250ms;
 
 }

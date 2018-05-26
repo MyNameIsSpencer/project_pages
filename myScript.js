@@ -13,11 +13,11 @@
       pOne.style.backgroundColor = "beige";
       pOne.style.color = "black";
     } else if(yPos > 450){
-      pagetop.style.height = "36px";
+      pagetop.style.height = "85px";
       pagetop.style.paddingTop = "8px";
       headingName.style.fontSize = "25px";
       headingName.style.marginTop = "0px";
-      menu.style.height = "0px";
+      // menu.style.height = "0px";
     } else if (yPos > 250){
       pagetop.style.height = "120px";
       pagetop.style.paddingTop = "25px";
