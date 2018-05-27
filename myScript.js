@@ -12,12 +12,14 @@
       pOne.style.marginLeft = "0px";
       pOne.style.backgroundColor = "beige";
       pOne.style.color = "black";
+      scrollTrigger += 1;
     } else if(yPos > 450){
       pagetop.style.height = "85px";
       pagetop.style.paddingTop = "8px";
       headingName.style.fontSize = "25px";
       headingName.style.marginTop = "0px";
       // menu.style.height = "0px";
+      scrollTrigger += 1;
     } else if (yPos > 250){
       pagetop.style.height = "120px";
       pagetop.style.paddingTop = "25px";
@@ -26,7 +28,6 @@
       headingName.style.marginTop = "0px";
       menu.style.height = "50px";
       scrollTrigger += 1;
-
     }else if(scrollTrigger === 0){
       pagetop.style.height = `${100 - (yPos / 4)}%`
     }
