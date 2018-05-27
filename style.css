@@ -61,16 +61,8 @@ footer {
 
 .top-table {
   width: 100%;
-  height: 25vw;
+  height: 28vw;
   border: none;
-}
-
-.top-table .piper {
-  color: white;
-}
-
-.top-table table th.piper {
-  color: white;
 }
 
 .top-table table td i{
@@ -78,6 +70,7 @@ footer {
 }
 
 #rotator-one {
+  margin-top: 20px;
   width: 75%;
   border: 16px ridge brown;
   transform: rotate(180deg);
@@ -99,7 +92,10 @@ footer {
   color: transparent;
   transition: 800ms ease;
   transition-delay: 250ms;
+}
 
+#p-one p {
+  transition-delay: 100ms;
 }
 
 .topper {

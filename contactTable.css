@@ -1,22 +1,28 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   font-family: helvetica, arial;
   margin: 0px;
+  overflow: hidden;
 }
 
 
 table {
+  height: auto;
   margin-bottom: 50px;
   padding: 3%;
 }
 
-
 th, td {
-  padding-bottom: 20px;
+  padding-bottom: 2vw;
 }
 
 table td {
   padding-left: 20px;
   font-weight: normal;
   text-align: left;
-  font-size: 25px;
+  font-size: 3vw;
 }
