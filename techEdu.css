@@ -25,30 +25,30 @@ td {
 }
 
 li {
-  margin-bottom: 1vw;
-  margin-right: 2vw;
-  font-size: 1vw;
+  margin-bottom: 2vw;
+  margin-right: 4vw;
+  font-size: 2vw;
 }
 
 
-.tech {
+#tech {
   color: white;
-  padding-left: 3%;
-  vertical-align: top;
-  display: inline-block;
-  width: 15%;
-  margin-left: 1vw;
-  background-color: #00a591;
-  border-radius: var(--rounded);
-}
-
-.edu {
-  margin-left: 25vw;
-  padding-left: 1.5vw;
-  padding-bottom: 1vw;
+  padding-left: 5%;
   vertical-align: top;
   display: inline-block;
   width: 25%;
+  margin-left: 2vw;
+  background-color: rgba(0, 165, 145, 0.8);
+  border-radius: var(--rounded);
+}
+
+#edu {
+  margin-left: 5vw;
+  padding-left: 3vw;
+  padding-bottom: 2vw;
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
   background-color: rgba(191, 214, 65, 0.8);
   border-radius: var(--rounded);
 }

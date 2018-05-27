@@ -1,4 +1,5 @@
 :root {
+  --rounded: 1vw;
 }
 
 body {
@@ -29,8 +30,8 @@ footer {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 10%;
-  background-image: url("mountains.jpg");
+  height: 100%;
+  background-image: url("pictures/mountains.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #FFF;
@@ -50,15 +51,18 @@ footer {
 	transition: height 0.3s linear 0s;
 }
 
-.central-column {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+#intro-paragraph {
+  padding: 5vw;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  font-size: 2vw;
+  font-weight: normal;
+  background-color: rgb(47,138,185);
 }
 
 .topper {
-  margin-top: 900px;
-  color: green;
+  margin-top: 700px;
 }
 
 .contact-heading {
@@ -86,7 +90,8 @@ footer {
 
 #rotator-one {
   margin-left: 2vw;
-  margin-top: 20px;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
   width: 85%;
   border: 16px ridge brown;
   transform: rotate(180deg);
@@ -114,15 +119,6 @@ footer {
   transition-delay: 100ms;
 }
 
-.tech-edu iframe{
-  overflow: hidden;
-  margin-top: 2vw;
-  width: 200%;
-  height: 50vw;
-  border: none;
-  overflow: hidden;
-}
-
 @media (min-aspect-ratio: 3/2) {
   #pagetop {
     background-size: 100%;
@@ -136,4 +132,64 @@ footer {
   #heading-name {
     margin-top: 1.5vw;
   }
+}
+
+
+#tech-edu {
+  text-align: left;
+  overflow: hidden;
+  margin-top: 2vw;
+  margin-bottom: 8vw;
+  width: 100%;
+  height: 40vw;
+  border: none;
+  overflow: hidden;
+}
+
+ul {
+  vertical-align: bottom;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 2vw;
+  margin-right: 4vw;
+  font-size: 2vw;
+}
+
+
+#tech {
+  margin-left: 2vw;
+  color: transparent;
+  padding-left: 2%;
+  padding-right: 2%;
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 34vw;
+  background-color: rgba(0, 165, 145, 0.8);
+  border-radius: var(--rounded);
+  transition: 1000ms ease;
+}
+
+#edu {
+  color: transparent;
+  overflow: hidden;
+  margin-left: 25vw;
+  padding-left: 3vw;
+  padding-bottom: 2vw;
+  vertical-align: top;
+  display: inline-block;
+  width: 10%;
+  height: 32vw;
+  background-color: rgba(191, 214, 65, 0.8);
+  border-radius: var(--rounded);
+  transition: 1000ms ease;
+}
+
+#edu li {
+  transition-delay: 200ms;
 }

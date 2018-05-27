@@ -11,6 +11,10 @@
       <h1 id="heading-name">Spencer Kyonka</h1>
       <div id="menu">
         <div style="margin-top:10px">
+          <button onclick="topFunction(1200)" id="myBtn" title="Intro">Intro</button>
+          <button onclick="topFunction(1700)" id="myBtn" title="Technical Skills">Technical Skills</button>
+          <button onclick="topFunction(2800)" id="myBtn" title="Contact">Contact</button>
+
           Where's my money???
         </div>
       </div>
@@ -22,37 +26,105 @@
     <h1 class="topper" style="text-align: left">
     </h1>
 
-    <div style="background-color: rgb(241,248,255)">
-      <h1 class="contact-heading">Contact</h1>
-      <iframe class="top-table" src="contactTable.html"> </iframe>
+    <p id="intro-paragraph">
+      Hi, I’m Spencer,<br><br>
+
+      I felt my life needed something MORE, a real JOLT, so I dove into Web Development, completing <b>Bitmaker’s Web Dev Intensive</b> program and loved it!!  Programming is a great combination of challenge and artistic expression, there’s always something more to learn.  <br><br>
+
+      Afterward, I did their <b>Product Management</b> class, and have previously completed <b>George Brown’s Data Analytics Post Graduate Certificate</b>.  I hope to work on projects that integrate data analytics with web development. <br><br>
+
+      For now, I continue <b>improving my React</b> skills and working as a freelancer on a client’s website.<br><br>
+
+      Thank you for your interest!
+    </p>
+
+    <div id="tech-edu">
+      <div id="tech">
+        <h1 style="text-align: left">Technical Skills</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Node</li>
+                  <li>Javascript</li>
+                  <li>Git/GitHub</li>
+                  <li>Ruby on Rails</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>SQL</li>
+                  <li>Data Analytics</li>
+                  <li>Excel</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div id="edu">
+        <h1 style="text-align: left">Education</h1>
+        <ul>
+          <li>Web Development Intensive - Bitmaker</li>
+          <li>Product Management - Bitmaker</li>
+          <li>Project Management - University of Toronto</li>
+          <li>Data Analytics - George Brown</li>
+          <li>BSc. Honours Psychology - Trent University</li>
+        </ul>
+      </div>
     </div>
 
-
-
+    <div id="hatedate">
       <div id="rotator-one">
         <div id="p-one">
           <p>
-            Hi, I’m Spencer.<br><br>
+            <b>Project HateDate</b><br><br>
 
-            I felt my life needed something MORE, a real JOLT, so I dove into Web Development, completing <b>Bitmaker’s Web Dev Intensive</b> program and loved it!!  Programming is a great combination of challenge and artistic expression, there’s always something more to learn.  <br><br>
+            HateDate is a social networking app, connecting you with people nearby based on shared hates rather than likes. <br><br>
 
-            Afterward, I did their <b>Product Management</b> class, and have previously completed <b>George Brown’s Data Analytics Post Graduate Certificate</b>.  I hope to work on projects that integrate data analytics with web development. <br><br>
+            Users take surveys based on pop culture entertainment such as The Simpsons, Star Wars and Star Trek by comparing characters through gifs using the Giphy API. <br><br>
 
-            For now, I continue <b>improving my React</b> skills and working as a freelancer on a client’s website.<br><br>
+            After completing a survey, their results would be compared to other users and if a strong match (greater than 75%) was found they'd be connected, showing their relative locations using Google Maps API.<br><br>
 
-            Thank you for your interest!
+
+            Take a look:<br>
+            https://hatedate.herokuapp.com/
           </p>
         </div>
       </div>
 
-    <div class="tech-edu">
-      <iframe src="techEdu.html"></iframe>
+      <div class="">
+        <img src="pictures/welcome.png" alt="Ooops!! Imagine an amazing intro page here">
+        <p>Google Maps marks your relative location and default radius.  The bigger the pink circles inside that radius, the more users are in those relative locations.</p>
+      </div>
+
+      <div class="">
+        <img src="pictures/survey-list.png" alt="Ooops!! Imagine an amazing intro page here">
+        <p>A list of surveys to choose from</p>
+      </div>
+
+      <div class="">
+        <img src="pictures/match.png" alt="Ooops!! Imagine an amazing intro page here">
+        <p>A Match has been chosen, Google Maps shows your approximate distance and opens a chat between you.</p>
+      </div>
+
+
+    </div>
+
+    <div class="">
+      <p>
+
+      </p>
     </div>
 
     <script src="myScript.js"></script>
-
-
-
 
     <footer>
       <h1 class="contact-heading" style="color: white"> Contact </h1>

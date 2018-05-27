@@ -8,3 +8,9 @@
     }
   </script>
 </div>
+
+
+<div style="background-color: rgb(241,248,255)">
+  <h1 class="contact-heading">Contact</h1>
+  <iframe class="top-table" src="contactTable.html"> </iframe>
+</div>
