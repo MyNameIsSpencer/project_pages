@@ -1,0 +1,54 @@
+:root {
+  --rounded: 1vw;
+}
+
+body div {
+  display: inline-block;
+  font-family: helvetica, ariel;
+}
+
+ul {
+  vertical-align: bottom;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+tr {
+  padding: 0px;
+  margin: 0px;
+}
+
+td {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  margin-bottom: 1vw;
+  margin-right: 2vw;
+  font-size: 1vw;
+}
+
+
+.tech {
+  color: white;
+  padding-left: 3%;
+  vertical-align: top;
+  display: inline-block;
+  width: 15%;
+  margin-left: 1vw;
+  background-color: #00a591;
+  border-radius: var(--rounded);
+}
+
+.edu {
+  margin-left: 25vw;
+  padding-left: 1.5vw;
+  padding-bottom: 1vw;
+  vertical-align: top;
+  display: inline-block;
+  width: 25%;
+  background-color: rgba(191, 214, 65, 0.8);
+  border-radius: var(--rounded);
+}

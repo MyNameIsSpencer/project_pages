@@ -1,18 +1,17 @@
-element {
-  --main-bg-color: brown;
+:root {
 }
 
 body {
   font-family: helvetica, arial;
   margin: 0px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* rgb(241,248,255) */
 
 footer {
   width: 100%;
-  height: 500px;
   background: #004A95;
   bottom: 0px;
   /* margin-top: */
@@ -52,16 +51,26 @@ footer {
 }
 
 .central-column {
-  width: 80vw;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
 
+.topper {
+  margin-top: 900px;
+  color: green;
+}
 
+.contact-heading {
+  font-size: 3vw;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 2%;
+}
 
 .top-table {
   width: 100%;
-  height: 28vw;
+  height: 23vw;
   border: none;
 }
 
@@ -69,9 +78,16 @@ footer {
   color:black;
 }
 
+.bottom-table {
+  width: 100%;
+  height: 23vw;
+  border: none;
+}
+
 #rotator-one {
+  margin-left: 2vw;
   margin-top: 20px;
-  width: 75%;
+  width: 85%;
   border: 16px ridge brown;
   transform: rotate(180deg);
   transform-origin: 0% 0%;
@@ -98,12 +114,14 @@ footer {
   transition-delay: 100ms;
 }
 
-.topper {
-  margin-top: 900px;
-  color: green;
+.tech-edu iframe{
+  overflow: hidden;
+  margin-top: 2vw;
+  width: 200%;
+  height: 50vw;
+  border: none;
+  overflow: hidden;
 }
-
-
 
 @media (min-aspect-ratio: 3/2) {
   #pagetop {
