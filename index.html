@@ -123,48 +123,114 @@
 
     <div id="product-process">
       <h1 id="product-title" style="font-size: 4vw; padding-left: 15vw;"><b style="color: #00A0E6";>Product Process</b></h1>
-      <p style="color: #00A0E6; padding-left: 15vw; margin-bottom: 5vw; display: none">Hover over a stage for more details </p>
+      <p style="color: #00A0E6; padding-left: 15vw; margin-bottom: 5vw; display: block">Hover over a stage for more details </p>
 
       <div id="list-process-left">
         <ul>
-          <li class="process-left">1   User Interviews</li>
-          <li class="process-left">2   Define Personas</li>
-          <li class="process-left">3   Experience</li>
-          <li class="process-left">4   User Stories</li>
-          <li class="process-left">5   Wireframe</li>
+          <li onmouseout="removeDetail('user-interviews')" onmouseover="showDetail('user-interviews')" class="process-left">1   User Interviews</li>
+          <li onmouseout="removeDetail('define-personas')" onmouseover="showDetail('define-personas')" class="process-left">2   Define Personas</li>
+          <li onmouseout="removeDetail('experience')" onmouseover="showDetail('experience')" class="process-left">3   Experience</li>
+          <li onmouseout="removeDetail('user-stories')" onmouseover="showDetail('user-stories')" class="process-left">4   User Stories</li>
+          <li onmouseout="removeDetail('wireframe')" onmouseover="showDetail('wireframe')" class="process-left">5   Wireframe</li>
         </ul>
-      </div>
+
+        <div id="mvp" class="info-left">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">MVP</h2>
+          <img src="pictures/mvp.jpg" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            Once the most important User Stories have been determined, a functional Minimum Viable Product (MVP) should be developed.
+          </p>
+        </div>
+
+        <div id="product-roadmap" class="info-left">
+          <img src="pictures/roadmap.png" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            A timeline of when User Stories and features will be developed.
+          </p>
+        </div>
+
+        <div id="usability-tests" class="info-left">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">Usability Tests</h2>
+          <img src="pictures/usability-tests.jpg" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            Putting the product in front of the User, whatever state it is in, to receive feedback, iterating at each step.
+          </p>
+        </div>
+
+        <div id="deploy-improve" class="info-left">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">Deploy / Improve</h2>
+          <img src="pictures/deploy.jpg" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            After public deployment, continuous iteration is important for further improvement.
+          </p>
+        </div>
+
+        <div id="kpis" class="info-left">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">KPIs</h2>
+          <img src="pictures/kpis.jpg" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            Now that the product is deployed, the team can reach for Key Performance Indicators (KPI).
+          </p>
+        </div>
+
+    </div>
+
+
 
       <div id="list-process-right">
         <ul>
-          <li class="process-right">6   MVP</li>
-          <li class="process-right">7   Product Roadmap</li>
-          <li class="process-right">8   Usability Tests</li>
-          <li class="process-right">9   Deploy/Improve</li>
-          <li class="process-right">10  KPIs</li>
+          <li onmouseout="removeDetail('mvp')" onmouseover="showDetail('mvp')" class="process-right">6   MVP</li>
+          <li onmouseout="removeDetail('product-roadmap')" onmouseover="showDetail('product-roadmap')" class="process-right">7   Product Roadmap</li>
+          <li onmouseout="removeDetail('usability-tests')" onmouseover="showDetail('usability-tests')" class="process-right">8   Usability Tests</li>
+          <li onmouseout="removeDetail('deploy-improve')" onmouseover="showDetail('deploy-improve')" class="process-right">9   Deploy/Improve</li>
+          <li onmouseout="removeDetail('kpis')" onmouseover="showDetail('kpis')" class="process-right">10  KPIs</li>
         </ul>
-        <div class="info-right">
+        <div id="user-interviews" class="info-right">
           <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">User Interviews</h2>
-
-          <img src="pictures/dogInterview.jpeg" alt="Ooops!! Imagine an amazing intro page here">
-
+          <img src="pictures/user-interviews.jpeg" alt="Ooops!! Imagine an amazing photo here">
           <p>
-            Discussing the issue with interviewees helps to reveal who your actual Users
-            are, what actual problems exist and how they feel about the topic.
+            Discussing the issue with interviewees helps to reveal
+            what actual problems exist and how they feel about the topic.
             Managers should avoid assumptions about what Users actually want beforehand.
           </p>
         </div>
-        <div class="info-right">
-          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">User Interviews</h2>
 
-          <img src="pictures/dogInterview.jpeg" alt="Ooops!! Imagine an amazing intro page here">
-
+        <div id="define-personas" class="info-right">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">Define Personas</h2>
+          <img src="pictures/persona.jpg" alt="Ooops!! Imagine an amazing photo here">
           <p>
-            Discussing the issue with interviewees helps to reveal who your actual Users
-            are, what actual problems exist and how they feel about the topic.
-            Managers should avoid assumptions about what Users actually want beforehand.
+          User Interviews will also elucidate who your real Users are, defining them in Personas
+          helps to organize your target audience.
+        </p>
+        </div>
+
+        <div id="experience" class="info-right">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">Experience</h2>
+          <img src="pictures/experience.png" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            Structured, unbiased questions in User Interviews will lead to users actual experiences
+             and how you can realistically improve upon it.  You may find they don’t need improvement, in which case your preliminary research saved you the effort of developing unnecessary products.
           </p>
         </div>
+
+        <div id="user-stories" class="info-right">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">User Stories</h2>
+          <img src="pictures/user-stories.png" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            User stories are descriptions of a particular feature in the frame of
+            “As a User, I would like…”. Managers can then prioritize User stories based on their effort and
+            benefit to the User.
+          </p>
+        </div>
+
+        <div id="wireframe" class="info-right">
+          <h2 style="color: #00A0E6; font-size: 2vw; margin: 0.2vw">Wireframe</h2>
+          <img src="pictures/wireframe.png" alt="Ooops!! Imagine an amazing photo here">
+          <p>
+            Wireframes and mock-ups are a way to get a feel for the flow of the proposed product.
+          </p>
+        </div>
+
       </div>
 
 

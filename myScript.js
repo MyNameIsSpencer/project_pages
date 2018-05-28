@@ -20,9 +20,6 @@ function yScroll(){
 
   let yPos = window.pageYOffset;
 
-
-
-
   let listDist = 3500;
 
   if (yPos > listDist) {
@@ -92,4 +89,14 @@ window.addEventListener("scroll", yScroll);
 function topFunction(yPos) {
   document.body.scrollTop = yPos;
   document.documentElement.scrollTop = yPos;
+}
+
+function showDetail(stage) {
+  let detail = document.getElementById(stage);
+  detail.style.display = "inline-block";
+}
+
+function removeDetail(stage) {
+  let detail = document.getElementById(stage);
+  detail.style.display = "none";
 }
