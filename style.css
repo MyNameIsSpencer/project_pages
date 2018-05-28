@@ -300,6 +300,7 @@ li {
 
 .info-right {
   /* background-color: rgb(220,240,240); */
+  font-size: 1.6vw;
   display: none;
   background-color: white;
   position: absolute;
@@ -312,6 +313,7 @@ li {
 
 .info-left {
   /* background-color: rgb(220,240,240); */
+  font-size: 1.6vw;
   display: none;
   background-color: white;
   position: absolute;
@@ -326,4 +328,13 @@ li {
 .info-right img, .info-left img {
   max-width: 100%;
   max-height: 55%;
+}
+
+.more-to-come {
+  font-size: 5vw;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear,30% 0%,70% 100%,from(#09203f),to(#537895));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 7vw;
 }
