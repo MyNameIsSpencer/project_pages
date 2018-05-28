@@ -20,36 +20,28 @@ function yScroll(){
 
   let yPos = window.pageYOffset;
 
+
+
+
+  let listDist = 3500;
+
+  if (yPos > listDist) {
+    for (let i = 0; i < 5; i++) {
+      let transDel = `${300 * i}ms`
+      processLeft[i].style.transitionDelay = transDel;
+      processRight[i].style.transitionDelay = transDel;
+      processLeft[i].style.marginLeft = "0";
+      processRight[i].style.marginLeft = "0";
+    }
+  }
+
+
   if(yPos > 400) {
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
     headingName.style.marginTop = "0px";
   }
-
-  if (yPos > 4700 && yPos < 6000) {
-    let listTop = "15vw";
-    productTitle.style.top = "5vw";
-    productTitle.style.position = "fixed";
-    processListLeft.style.top = listTop;
-    processListLeft.style.position = "fixed";
-    processListRight.style.top = listTop;
-    processListRight.style.position = "fixed";
-  } else if (yPos > 6000) {
-    productTitle.style.display = "none";
-    processListLeft.style.display = "none";
-    processListRight.style.display = "none";
-  }
-
-  for(let i = 0; i < 10; i++) {
-    let incrementer = 100
-    let scrollDis = 4700 + (i * incrementer);
-    let nowItem = processLeft[i];
-    if (yPos > scrollDis && yPos < (scrollDis + incrementer)) {
-      nowItem.style.marginLeft = "0px";
-    }
-  }
-
 
   if(yPos > 3000){
     hatedateI3.style.transform = "rotateY(0deg)"
