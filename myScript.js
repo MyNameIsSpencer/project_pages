@@ -11,8 +11,46 @@ function yScroll(){
   let hatedateI1 = document.getElementById('hatedate-image1');
   let hatedateI2 = document.getElementById('hatedate-image2');
   let hatedateI3 = document.getElementById('hatedate-image3');
+  let processLeft = document.getElementsByClassName('process-left');
+  let processRight = document.getElementsByClassName('process-right');
+  let productProcess = document.getElementById('product-process');
+  let productTitle = document.getElementById('product-title');
+  let processListLeft = document.getElementById('list-process-left');
+  let processListRight = document.getElementById('list-process-right');
 
   let yPos = window.pageYOffset;
+
+  if(yPos > 400) {
+    pagetop.style.height = "85px";
+    pagetop.style.paddingTop = "8px";
+    headingName.style.fontSize = "25px";
+    headingName.style.marginTop = "0px";
+  }
+
+  if (yPos > 4700 && yPos < 6000) {
+    let listTop = "15vw";
+    productTitle.style.top = "5vw";
+    productTitle.style.position = "fixed";
+    processListLeft.style.top = listTop;
+    processListLeft.style.position = "fixed";
+    processListRight.style.top = listTop;
+    processListRight.style.position = "fixed";
+  } else if (yPos > 6000) {
+    productTitle.style.display = "none";
+    processListLeft.style.display = "none";
+    processListRight.style.display = "none";
+  }
+
+  for(let i = 0; i < 10; i++) {
+    let incrementer = 100
+    let scrollDis = 4700 + (i * incrementer);
+    let nowItem = processLeft[i];
+    if (yPos > scrollDis && yPos < (scrollDis + incrementer)) {
+      nowItem.style.marginLeft = "0px";
+    }
+  }
+
+
   if(yPos > 3000){
     hatedateI3.style.transform = "rotateY(0deg)"
   } else if(yPos > 2500){
