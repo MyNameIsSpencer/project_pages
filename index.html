@@ -23,7 +23,7 @@
 
 
 
-    <h1 class="topper" style="text-align: left">
+    <h1 id="topper" style="text-align: left">
     </h1>
 
     <p id="intro-paragraph">
@@ -82,46 +82,91 @@
     </div>
 
     <div id="hatedate">
-      <div id="rotator-one">
+      <div class="rotator" id="rotator-one">
         <div id="p-one">
           <p>
             <b>Project HateDate</b><br><br>
 
-            HateDate is a social networking app, connecting you with people nearby based on shared hates rather than likes. <br><br>
+            HateDate is a social networking app, connecting you with people nearby based on shared hates. <br><br>
 
-            Users take surveys based on pop culture entertainment such as The Simpsons, Star Wars and Star Trek by comparing characters through gifs using the Giphy API. <br><br>
+            Users take surveys based on pop culture entertainment, comparing characters through gifs using the Giphy API. <br><br>
 
-            After completing a survey, their results would be compared to other users and if a strong match (greater than 75%) was found they'd be connected, showing their relative locations using Google Maps API.<br><br>
+            After completing a survey, results are compared to other users and matched if greater than 75% similarity. HateDate then shows their relative locations using Google Maps API.<br><br>
 
 
-            Take a look:<br>
-            https://hatedate.herokuapp.com/
+            Take a look: <a style="color: blue;" href="https://hatedate.herokuapp.com/">HateDate</a>
           </p>
+
         </div>
       </div>
 
-      <div class="">
-        <img src="pictures/welcome.png" alt="Ooops!! Imagine an amazing intro page here">
+      <div class="hatedate-para">
         <p>Google Maps marks your relative location and default radius.  The bigger the pink circles inside that radius, the more users are in those relative locations.</p>
+        <img id="hatedate-image1" src="pictures/welcome.png" alt="Ooops!! Imagine an amazing intro page here">
       </div>
 
-      <div class="">
-        <img src="pictures/survey-list.png" alt="Ooops!! Imagine an amazing intro page here">
+      <div class="hatedate-para">
         <p>A list of surveys to choose from</p>
+        <img id="hatedate-image2" src="pictures/survey-list.png" alt="Ooops!! Imagine an amazing intro page here">
       </div>
 
-      <div class="">
-        <img src="pictures/match.png" alt="Ooops!! Imagine an amazing intro page here">
+      <div class="hatedate-para">
         <p>A Match has been chosen, Google Maps shows your approximate distance and opens a chat between you.</p>
+        <img id="hatedate-image3" src="pictures/match.png" alt="Ooops!! Imagine an amazing intro page here">
       </div>
 
 
     </div>
 
     <div class="">
-      <p>
-
-      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>User Interviews</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Define Personas</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Experience</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>User Stories</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Wireframe</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr>
+            <td>6</td>
+            <td>MVP</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Product Roadmap</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Usability Tests</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Deploy / Improve</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>KPIs</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="myScript.js"></script>

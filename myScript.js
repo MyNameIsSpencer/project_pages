@@ -8,8 +8,18 @@ function yScroll(){
   let pOne = document.getElementById('p-one');
   let tech = document.getElementById('tech');
   let edu = document.getElementById('edu');
+  let hatedateI1 = document.getElementById('hatedate-image1');
+  let hatedateI2 = document.getElementById('hatedate-image2');
+  let hatedateI3 = document.getElementById('hatedate-image3');
+
   let yPos = window.pageYOffset;
-  if(yPos > 1250){
+  if(yPos > 3000){
+    hatedateI3.style.transform = "rotateY(0deg)"
+  } else if(yPos > 2500){
+    hatedateI2.style.transform = "rotateY(0deg)"
+  } else if(yPos > 2000){
+    hatedateI1.style.transform = "rotateY(0deg)"
+  } else if(yPos > 1250){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
@@ -26,7 +36,7 @@ function yScroll(){
     headingName.style.marginTop = "0px";
     rotatorOne.style.transform = "rotate(0deg)";
     pOne.style.marginLeft = "0px";
-    pOne.style.backgroundColor = "beige";
+    pOne.style.backgroundColor = "white";
     pOne.style.color = "black";
     scrollTrigger += 1;
   } else if(yPos > 450){
