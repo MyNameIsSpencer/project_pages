@@ -20,9 +20,11 @@ function yScroll(){
 
   let yPos = window.pageYOffset;
 
-  let listDist = 3500;
 
-  if (yPos > listDist) {
+  
+
+
+  if (yPos > 3500) {
     for (let i = 0; i < 5; i++) {
       let transDel = `${300 * i}ms`
       processLeft[i].style.transitionDelay = transDel;

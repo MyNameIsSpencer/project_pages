@@ -62,7 +62,7 @@ footer {
 }
 
 #topper {
-  margin-top: 900px;
+  margin-top: 700px;
 }
 
 .contact-heading {
@@ -141,7 +141,7 @@ li {
   height: 34vw;
   background-color: rgba(0, 165, 145, 0.8);
   border-radius: var(--rounded);
-  transition: 1000ms ease;
+  transition: 800ms ease;
 }
 
 #edu {
@@ -156,7 +156,7 @@ li {
   height: 32vw;
   background-color: rgba(191, 214, 65, 0.8);
   border-radius: var(--rounded);
-  transition: 1000ms ease;
+  transition: 800ms ease;
 }
 
 #edu li {
@@ -331,10 +331,18 @@ li {
 }
 
 .more-to-come {
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   background-image: -webkit-gradient(linear,30% 0%,70% 100%,from(#09203f),to(#537895));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 7vw;
+  margin-top: 15vw;
+}
+
+.thank-you {
+  font-size: 12vw;
+  background-image: -webkit-gradient(linear,30% 0%,70% 100%,from(#09203f),to(#537895));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15vw;
 }
