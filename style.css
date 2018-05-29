@@ -64,6 +64,10 @@ footer {
   margin-left: 3vw;
 }
 
+#menu button:hover {
+  background-color: dodgerblue;
+}
+
 #intro-paragraph {
   padding: 5vw;
   margin: 0 auto 10vw auto;
@@ -176,7 +180,7 @@ li {
   transition-delay: 200ms;
 }
 
-#hatedate {
+#networkingApp {
   padding: 0vw 0 5vw 0;
   padding-top: 3vw;
   padding-bottom: 2vw;
@@ -216,17 +220,17 @@ li {
   transition-delay: 100ms;
 }
 
-.hatedate-para {
+.network-para {
   margin: 4vw auto;
   margin-bottom: 0;
 }
 
-.hatedate-para p, .hatedate-para img, .hatedate-para div {
+.network-para p, .network-para img, .network-para div {
   display: inline-block;
   text-align: left;
 }
 
-.hatedate-para p {
+.network-para p {
   padding: 1vw;
   font-size: 1.5vw;
   vertical-align: top;
@@ -238,7 +242,7 @@ li {
   border: 16px ridge orchid;
 }
 
-.hatedate-para img {
+.network-para img {
   width: 50%;
   transform-origin: 100% 50%;
   transform: rotateY(180deg);
@@ -342,6 +346,7 @@ li {
 .info-right img, .info-left img {
   max-width: 100%;
   max-height: 55%;
+  margin-bottom: 1vw;
 }
 
 .more-to-come {

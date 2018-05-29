@@ -8,9 +8,9 @@ function yScroll(){
   let pOne = document.getElementById('p-one');
   let tech = document.getElementById('tech');
   let edu = document.getElementById('edu');
-  let hatedateI1 = document.getElementById('hatedate-image1');
-  let hatedateI2 = document.getElementById('hatedate-image2');
-  let hatedateI3 = document.getElementById('hatedate-image3');
+  let networkI1 = document.getElementById('network-image1');
+  let networkI2 = document.getElementById('network-image2');
+  let networkI3 = document.getElementById('network-image3');
   let processLeft = document.getElementsByClassName('process-left');
   let processRight = document.getElementsByClassName('process-right');
   let productProcess = document.getElementById('product-process');
@@ -37,11 +37,11 @@ function yScroll(){
       processRight[i].style.marginLeft = "0";
     }
   } else if(yPos > 3600){
-    hatedateI3.style.transform = "rotateY(0deg)";
+    networkI3.style.transform = "rotateY(0deg)";
   } else if(yPos > 3000){
-    hatedateI2.style.transform = "rotateY(0deg)";
+    networkI2.style.transform = "rotateY(0deg)";
   } else if(yPos > 2400){
-    hatedateI1.style.transform = "rotateY(0deg)";
+    networkI1.style.transform = "rotateY(0deg)";
   } else if(yPos > 1950){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
