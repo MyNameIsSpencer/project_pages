@@ -21,20 +21,6 @@ function yScroll(){
   let yPos = window.pageYOffset;
 
 
-  
-
-
-  if (yPos > 3500) {
-    for (let i = 0; i < 5; i++) {
-      let transDel = `${300 * i}ms`
-      processLeft[i].style.transitionDelay = transDel;
-      processRight[i].style.transitionDelay = transDel;
-      processLeft[i].style.marginLeft = "0";
-      processRight[i].style.marginLeft = "0";
-    }
-  }
-
-
   if(yPos > 400) {
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
@@ -42,23 +28,21 @@ function yScroll(){
     headingName.style.marginTop = "0px";
   }
 
-  if(yPos > 3000){
-    hatedateI3.style.transform = "rotateY(0deg)"
-  } else if(yPos > 2500){
-    hatedateI2.style.transform = "rotateY(0deg)"
-  } else if(yPos > 2000){
-    hatedateI1.style.transform = "rotateY(0deg)"
-  } else if(yPos > 1250){
-    pagetop.style.height = "85px";
-    pagetop.style.paddingTop = "8px";
-    headingName.style.fontSize = "25px";
-    headingName.style.marginTop = "0px";
-    tech.style.color = "white";
-    tech.style.width = "35%";
-    edu.style.width = "45%";
-    edu.style.marginLeft = "0";
-    edu.style.color = "black";
-  } else if(yPos > 700){
+  if (yPos > 4800) {
+    for (let i = 0; i < 5; i++) {
+      let transDel = `${300 * i}ms`
+      processLeft[i].style.transitionDelay = transDel;
+      processRight[i].style.transitionDelay = transDel;
+      processLeft[i].style.marginLeft = "0";
+      processRight[i].style.marginLeft = "0";
+    }
+  } else if(yPos > 3600){
+    hatedateI3.style.transform = "rotateY(0deg)";
+  } else if(yPos > 3000){
+    hatedateI2.style.transform = "rotateY(0deg)";
+  } else if(yPos > 2400){
+    hatedateI1.style.transform = "rotateY(0deg)";
+  } else if(yPos > 1950){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
@@ -68,7 +52,17 @@ function yScroll(){
     pOne.style.backgroundColor = "white";
     pOne.style.color = "black";
     scrollTrigger += 1;
-  } else if(yPos > 450){
+  } else if(yPos > 1000){
+    pagetop.style.height = "85px";
+    pagetop.style.paddingTop = "8px";
+    headingName.style.fontSize = "25px";
+    headingName.style.marginTop = "0px";
+    tech.style.color = "white";
+    tech.style.width = "35%";
+    edu.style.width = "45%";
+    edu.style.marginLeft = "0";
+    edu.style.color = "black";
+  } else if(yPos > 600){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
