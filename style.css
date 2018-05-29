@@ -42,13 +42,26 @@ footer {
   overflow: hidden;
 }
 
-#pagetop > #menu{
+#menu{
+  text-align: left;
 	position: absolute;
 	bottom: 0px;
 	width:100%;
-	background-color: #004A95;
+  background-color: #004A95;
 	height: 50px;
 	transition: height 0.3s linear 0s;
+}
+
+#menu button {
+  background-color: transparent;
+  color: white;
+  height: 2.5vw;
+  font-size: 1.5vw;
+  border-style: none;
+  border-left: 0.5vw solid dodgerblue;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3vw;
 }
 
 #intro-paragraph {
