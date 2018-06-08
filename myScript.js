@@ -21,47 +21,56 @@ function yScroll(){
   let yPos = window.pageYOffset;
 
 
-  if(yPos > 400) {
-    pagetop.style.height = "85px";
-    pagetop.style.paddingTop = "8px";
-    headingName.style.fontSize = "25px";
-    headingName.style.marginTop = "0px";
-  }
 
-  if (yPos > 4800) {
-    for (let i = 0; i < 5; i++) {
-      let transDel = `${300 * i}ms`
-      processLeft[i].style.transitionDelay = transDel;
-      processRight[i].style.transitionDelay = transDel;
-      processLeft[i].style.marginLeft = "0";
-      processRight[i].style.marginLeft = "0";
+    let techEduCrunch = 1000,
+        firstRotator = 1950,
+        secondRotator = 2400,
+        thirdRotator = 3000,
+        fourthRotator = 3600,
+        processSlideIn = 4800;
+
+
+    if(yPos > 400) {
+      pagetop.style.height = "85px";
+      pagetop.style.paddingTop = "8px";
+      headingName.style.fontSize = "25px";
+      headingName.style.marginTop = "0px";
     }
-  } else if(yPos > 3600){
-    networkI3.style.transform = "rotateY(0deg)";
-  } else if(yPos > 3000){
-    networkI2.style.transform = "rotateY(0deg)";
-  } else if(yPos > 2400){
-    networkI1.style.transform = "rotateY(0deg)";
-  } else if(yPos > 1950){
-    pagetop.style.height = "85px";
-    pagetop.style.paddingTop = "8px";
-    headingName.style.fontSize = "25px";
-    headingName.style.marginTop = "0px";
-    rotatorOne.style.transform = "rotate(0deg)";
-    pOne.style.marginLeft = "0px";
-    pOne.style.backgroundColor = "white";
-    pOne.style.color = "black";
-    scrollTrigger += 1;
-  } else if(yPos > 1000){
-    pagetop.style.height = "85px";
-    pagetop.style.paddingTop = "8px";
-    headingName.style.fontSize = "25px";
-    headingName.style.marginTop = "0px";
-    tech.style.color = "white";
-    tech.style.width = "35%";
-    edu.style.width = "45%";
-    edu.style.marginLeft = "0";
-    edu.style.color = "black";
+
+    if (yPos > processSlideIn) {
+      for (let i = 0; i < 5; i++) {
+        let transDel = `${300 * i}ms`
+        processLeft[i].style.transitionDelay = transDel;
+        processRight[i].style.transitionDelay = transDel;
+        processLeft[i].style.marginLeft = "0";
+        processRight[i].style.marginLeft = "0";
+      }
+    } else if(yPos > fourthRotator){
+      networkI3.style.transform = "rotateY(0deg)";
+    } else if(yPos > thirdRotator){
+      networkI2.style.transform = "rotateY(0deg)";
+    } else if(yPos > secondRotator){
+      networkI1.style.transform = "rotateY(0deg)";
+    } else if(yPos > firstRotator){
+      pagetop.style.height = "85px";
+      pagetop.style.paddingTop = "8px";
+      headingName.style.fontSize = "25px";
+      headingName.style.marginTop = "0px";
+      rotatorOne.style.transform = "rotate(0deg)";
+      pOne.style.marginLeft = "0px";
+      pOne.style.backgroundColor = "white";
+      pOne.style.color = "black";
+      scrollTrigger += 1;
+    } else if(yPos > techEduCrunch){
+      pagetop.style.height = "85px";
+      pagetop.style.paddingTop = "8px";
+      headingName.style.fontSize = "25px";
+      headingName.style.marginTop = "0px";
+      tech.style.color = "white";
+      tech.style.width = "35%";
+      edu.style.width = "45%";
+      edu.style.marginLeft = "0";
+      edu.style.color = "black";
   } else if(yPos > 600){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
