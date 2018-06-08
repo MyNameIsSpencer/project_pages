@@ -17,60 +17,96 @@ function yScroll(){
   let productTitle = document.getElementById('product-title');
   let processListLeft = document.getElementById('list-process-left');
   let processListRight = document.getElementById('list-process-right');
+  let pfer = document.getElementById('pfer');
+  let pfer2 = document.getElementsByClassName('pfer2');
+  let fitImage = document.getElementsByClassName('fitsite-img');
+
+
+
+
 
   let yPos = window.pageYOffset;
 
+  let screenWidth = window.innerWidth;
+  let screenMulti = 1;
+  let smallScreen = 1;
+  let bigScreen = 1;
+
+  if (screenWidth < 800) {
+    screenMulti = smallScreen;
+  } else if (screenWidth > 1400) {
+    screenMulti = bigScreen;
+  }
+
+  let techEduCrunch = 1000 * screenMulti,
+
+      pferFade = 1900 * screenMulti,
+      firstFitRow = 2300 * screenMulti,
+      secondFitRow = 2700 * screenMulti,
+      thirdFitRow = 3000 * screenMulti,
+
+      firstRotator = 4000 * screenMulti,
+      secondRotator = 4600 * screenMulti,
+      thirdRotator = 5100 * screenMulti,
+      fourthRotator = 5600 * screenMulti,
+      
+      processSlideIn = 7000 * screenMulti;
 
 
-    let techEduCrunch = 1000,
-        firstRotator = 1950,
-        secondRotator = 2400,
-        thirdRotator = 3000,
-        fourthRotator = 3600,
-        processSlideIn = 4800;
+  if(yPos > 400) {
+    pagetop.style.height = "85px";
+    pagetop.style.paddingTop = "8px";
+    headingName.style.fontSize = "25px";
+    headingName.style.marginTop = "0px";
+  }
 
-
-    if(yPos > 400) {
-      pagetop.style.height = "85px";
-      pagetop.style.paddingTop = "8px";
-      headingName.style.fontSize = "25px";
-      headingName.style.marginTop = "0px";
+  if (yPos > processSlideIn) {
+    for (let i = 0; i < 5; i++) {
+      let transDel = `${300 * i}ms`
+      processLeft[i].style.transitionDelay = transDel;
+      processRight[i].style.transitionDelay = transDel;
+      processLeft[i].style.marginLeft = "0";
+      processRight[i].style.marginLeft = "0";
     }
+  } else if(yPos > fourthRotator){
+    networkI3.style.transform = "rotateY(0deg)";
+  } else if(yPos > thirdRotator){
+    networkI2.style.transform = "rotateY(0deg)";
+  } else if(yPos > secondRotator){
+    networkI1.style.transform = "rotateY(0deg)";
+  } else if(yPos > firstRotator){
+    pagetop.style.height = "85px";
+    pagetop.style.paddingTop = "8px";
+    headingName.style.fontSize = "25px";
+    headingName.style.marginTop = "0px";
+    rotatorOne.style.transform = "rotate(0deg)";
+    pOne.style.marginLeft = "0px";
+    pOne.style.backgroundColor = "white";
+    pOne.style.color = "black";
+    scrollTrigger += 1;
+  } else if(yPos > thirdFitRow) {
+    pfer2[2].style.opacity = "1";
+    fitImage[2].style.opacity = "1";
+  } else if(yPos > secondFitRow) {
+    pfer2[1].style.opacity = "1";
+    fitImage[1].style.opacity = "1";
+  } else if(yPos > firstFitRow) {
+    pfer2[0].style.opacity = "1";
+    fitImage[0].style.opacity = "1";
+  } else if(yPos > pferFade) {
+    pfer.style.opacity = "1";
 
-    if (yPos > processSlideIn) {
-      for (let i = 0; i < 5; i++) {
-        let transDel = `${300 * i}ms`
-        processLeft[i].style.transitionDelay = transDel;
-        processRight[i].style.transitionDelay = transDel;
-        processLeft[i].style.marginLeft = "0";
-        processRight[i].style.marginLeft = "0";
-      }
-    } else if(yPos > fourthRotator){
-      networkI3.style.transform = "rotateY(0deg)";
-    } else if(yPos > thirdRotator){
-      networkI2.style.transform = "rotateY(0deg)";
-    } else if(yPos > secondRotator){
-      networkI1.style.transform = "rotateY(0deg)";
-    } else if(yPos > firstRotator){
-      pagetop.style.height = "85px";
-      pagetop.style.paddingTop = "8px";
-      headingName.style.fontSize = "25px";
-      headingName.style.marginTop = "0px";
-      rotatorOne.style.transform = "rotate(0deg)";
-      pOne.style.marginLeft = "0px";
-      pOne.style.backgroundColor = "white";
-      pOne.style.color = "black";
-      scrollTrigger += 1;
-    } else if(yPos > techEduCrunch){
-      pagetop.style.height = "85px";
-      pagetop.style.paddingTop = "8px";
-      headingName.style.fontSize = "25px";
-      headingName.style.marginTop = "0px";
-      tech.style.color = "white";
-      tech.style.width = "35%";
-      edu.style.width = "45%";
-      edu.style.marginLeft = "0";
-      edu.style.color = "black";
+
+  } else if(yPos > techEduCrunch){
+    pagetop.style.height = "85px";
+    pagetop.style.paddingTop = "8px";
+    headingName.style.fontSize = "25px";
+    headingName.style.marginTop = "0px";
+    tech.style.color = "white";
+    tech.style.width = "35%";
+    edu.style.width = "45%";
+    edu.style.marginLeft = "0";
+    edu.style.color = "black";
   } else if(yPos > 600){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
