@@ -180,6 +180,51 @@ li {
   transition-delay: 200ms;
 }
 
+
+
+#fit-site {
+  background-color: cornsilk;
+}
+
+.pfer {
+  width: 70%;
+  margin-left: 5vw;
+  margin-bottom: 10vw;
+  text-align: left;
+  font-size: 1.5vw;
+  padding: 2vw;
+  box-shadow: 1vw 1vw 0.5vw rgb(238,170,0);
+  background-color: white;
+}
+
+.pfer2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  margin-bottom: 10vw;
+  text-align: left;
+  font-size: 1.5vw;
+  padding: 2vw;
+  box-shadow: 1vw 1vw 0.5vw rgb(238,170,0);
+  background-color: white;
+
+}
+
+#fit-site img {
+  margin-right: 5vw;
+  display: inline-block;
+  text-align: right !important;
+  width: 40%;
+  margin-bottom: 10vw;
+  box-shadow: 1vw 1vw 0.5vw rgb(238,170,0);
+}
+
+
+
+
+
 #networkingApp {
   padding: 0vw 0 5vw 0;
   padding-top: 3vw;
