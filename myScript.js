@@ -27,15 +27,20 @@ function yScroll(){
 
   let yPos = window.pageYOffset;
 
-  let screenWidth = window.innerWidth;
+  let windowWidth = window.innerWidth;
   let screenMulti = 1;
-  let smallScreen = 1;
-  let bigScreen = 1;
+  let smallScreen = 0.4;
+  let smallerScreen = 1;
+  let bigScreen = 1.4;
 
-  if (screenWidth < 800) {
-    screenMulti = smallScreen;
-  } else if (screenWidth > 1400) {
+  if (windowWidth > 800 && windowWidth < 1900) {
+    screenMulti = 1;
+  } else if (windowWidth > 1900) {
     screenMulti = bigScreen;
+  } else if (windowWidth < 800) {
+    screenMulti = smallScreen;
+  } else if (windowWidth < 500) {
+    screenMulti = smallerScreen;
   }
 
   let techEduCrunch = 1000 * screenMulti,
@@ -49,7 +54,7 @@ function yScroll(){
       secondRotator = 4600 * screenMulti,
       thirdRotator = 5100 * screenMulti,
       fourthRotator = 5600 * screenMulti,
-      
+
       processSlideIn = 7000 * screenMulti;
 
 
