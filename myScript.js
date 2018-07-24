@@ -45,17 +45,17 @@ function yScroll(){
 
   let techEduCrunch = 1000 * screenMulti,
 
-      pferFade = 1900 * screenMulti,
-      firstFitRow = 2300 * screenMulti,
-      secondFitRow = 2700 * screenMulti,
-      thirdFitRow = 3000 * screenMulti,
+      pferFade = 1400 * screenMulti,
+      firstFitRow = 1700 * screenMulti,
+      secondFitRow = 2000 * screenMulti,
+      thirdFitRow = 2200 * screenMulti,
 
-      firstRotator = 4000 * screenMulti,
-      secondRotator = 4600 * screenMulti,
-      thirdRotator = 5100 * screenMulti,
-      fourthRotator = 5600 * screenMulti,
+      firstRotator = 2500 * screenMulti,
+      secondRotator = 2700 * screenMulti,
+      thirdRotator = 3000 * screenMulti,
+      fourthRotator = 3500 * screenMulti,
 
-      processSlideIn = 7000 * screenMulti;
+      processSlideIn = 4000 * screenMulti;
 
 
   if(yPos > 400) {
@@ -126,8 +126,10 @@ function yScroll(){
     headingName.style.marginTop = "0px";
     menu.style.height = "50px";
     scrollTrigger += 1;
-  }else if(scrollTrigger === 0){
+  } else if(scrollTrigger === 0){
     pagetop.style.height = `${100 - (yPos / 4)}%`
+  } else if (yPos < 150 && scrollTrigger > 0) {
+    pagetop.style.height = `97%`;
   }
 }
 window.addEventListener("scroll", yScroll);
