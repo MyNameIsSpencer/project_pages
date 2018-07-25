@@ -134,10 +134,16 @@ function yScroll(){
 }
 window.addEventListener("scroll", yScroll);
 
-function topFunction(yPos) {
-  document.body.scrollTop = yPos;
-  document.documentElement.scrollTop = yPos;
+
+function topFunction(ellen) {
+    var elmnt = document.getElementById(ellen);
+    elmnt.scrollIntoView();
 }
+
+// function topFunction(yPos) {
+//   document.body.scrollTop = yPos;
+//   document.documentElement.scrollTop = yPos;
+// }
 
 function showDetail(stage) {
   let detail = document.getElementById(stage);
