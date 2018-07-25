@@ -73,13 +73,13 @@ function yScroll(){
       processLeft[i].style.marginLeft = "0";
       processRight[i].style.marginLeft = "0";
     }
-  } else if(yPos > fourthRotator){
+  } else if(yPos > techEduCrunch){
     networkI3.style.transform = "rotateY(0deg)";
-  } else if(yPos > thirdRotator){
+  // } else if(yPos > thirdRotator){
     networkI2.style.transform = "rotateY(0deg)";
-  } else if(yPos > secondRotator){
+  // } else if(yPos > secondRotator){
     networkI1.style.transform = "rotateY(0deg)";
-  } else if(yPos > firstRotator){
+  // } else if(yPos > firstRotator){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
@@ -89,20 +89,20 @@ function yScroll(){
     pOne.style.backgroundColor = "white";
     pOne.style.color = "black";
     scrollTrigger += 1;
-  } else if(yPos > thirdFitRow) {
+  // } else if(yPos > thirdFitRow) {
     pfer2[2].style.opacity = "1";
     fitImage[2].style.opacity = "1";
-  } else if(yPos > secondFitRow) {
+  // } else if(yPos > secondFitRow) {
     pfer2[1].style.opacity = "1";
     fitImage[1].style.opacity = "1";
-  } else if(yPos > firstFitRow) {
+  // } else if(yPos > firstFitRow) {
     pfer2[0].style.opacity = "1";
     fitImage[0].style.opacity = "1";
-  } else if(yPos > pferFade) {
+  // } else if(yPos > pferFade) {
     pfer.style.opacity = "1";
 
 
-  } else if(yPos > techEduCrunch){
+  // } else if(yPos > techEduCrunch){
     pagetop.style.height = "85px";
     pagetop.style.paddingTop = "8px";
     headingName.style.fontSize = "25px";
